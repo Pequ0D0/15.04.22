@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Хост: 127.0.0.1:3306
--- Время создания: Апр 14 2022 г., 23:42
+-- Время создания: Апр 15 2022 г., 10:14
 -- Версия сервера: 10.3.22-MariaDB
 -- Версия PHP: 7.1.33
 
@@ -81,8 +81,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_user`, `Name`, `Surname`, `Patronymic`, `Login`, `Email`, `Password`, `user_role`) VALUES
-(1, 'Алексей', 'Сидит', 'Вдискорде', 'Тут', 'nabludaet@mail.ru', 'asdfg12345', 2),
-(2, 'Я', 'ТУПОЙ ', 'ОБМУДОК', 'И', 'gorjus@mail.ru', '123123', 1);
+(3, 'Алексей', 'Варламов', 'Генадьевич', 'admin', 'admin@mail.ru', 'admin11', 2);
 
 --
 -- Индексы сохранённых таблиц
@@ -114,7 +113,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT для таблицы `users`
 --
 ALTER TABLE `users`
-  MODIFY `id_user` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+  MODIFY `id_user` int(255) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
